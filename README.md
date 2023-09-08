@@ -2,7 +2,7 @@
 
 ## Context
 
-An airline operates flights between airports in Europe and the USA. Available routes are provided in `data.ts` and can be flown in either direction, for example:
+An airline operates flights between airports in Europe and the USA. Available routes are provided in `data.ts` and can be flown in _either direction_, for example:
 
 | Route     | Distance |
 | --------- | -------- |
@@ -20,22 +20,22 @@ The base fare is paid once per booking based on the chosen fare class.
 
 A per-flight baggage fee of £25 is charged for each flight _after_ the first flight.
 
+Example itineraries:
+
+| Routes          | Class    | Distance | Base Fare | Surcharge | Baggage | Total |
+| --------------- | -------- | -------- | --------- | --------- | ------- | ----- |
+| MAN → FRA       | Economy  | 845      | 50        | 84        | 0       | 134   |
+| MAN → JFK → MAN | Economy  | 10640    | 50        | 1064      | 25      | 1139  |
+| JFK → MAN → FRA | Business | 6165     | 100       | 616       | 25      | 1049  |
+
 ## Task
 
 Write an application that takes an itinerary of 2 or more airports + a cabin class and outputs the cost of the booking.
 
-For example:
-
-```js
-book(["FRA", "MAN"], "ECONOMY") -> 50 + (1 * 84) -> 134
-book(["MAN", "JFK", "MAN"], "ECONOMY") -> 50 + (1 * 1064) + 25 -> 1139
-book(["JFK", "MAN", "FRA"], "BUSINESS") -> 100 + (1.5 * 616) + 25 -> 1049
-```
-
 Implement the `book()` method and write tests to ensure it can:
 
-1. Calculate the cost of a simple one-way flight (eg FRA → MAN).
-2. Calculate the cost of a return flight (eg MAN → FRA → MAN).
+1. Calculate the cost of a simple one-way flight (eg MAN → FRA).
+2. Calculate the cost of a return flight (eg MAN → JFK → MAN).
 3. Calculate the cost of connecting flights (eg JFK → MAN → FRA).
 4. Throw a "flight unavailable" error for routes which are not available (eg FRA → JFK)
 
