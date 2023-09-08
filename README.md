@@ -2,7 +2,7 @@
 
 ## Context
 
-An airline operates flights from between airports in Europe and the USA. Available routes are provided in `data.ts` and can be flown in either direction, for example:
+An airline operates flights between airports in Europe and the USA. Available routes are provided in `data.ts` and can be flown in either direction, for example:
 
 | Route     | Distance |
 | --------- | -------- |
@@ -36,8 +36,8 @@ Implement the `book()` method and write tests to ensure it can:
 
 1. Calculate the cost of a simple one-way flight (eg FRA → MAN).
 2. Calculate the cost of a return flight (eg MAN → FRA → MAN).
-3. Calculate the cost of connecting flights (JFK → MAN → FRA).
-4. Throw a "flight unavailable" error for routes which are not available (FRA → JFK)
+3. Calculate the cost of connecting flights (eg JFK → MAN → FRA).
+4. Throw a "flight unavailable" error for routes which are not available (eg FRA → JFK)
 
 ## Extension
 
