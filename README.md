@@ -11,12 +11,14 @@ An airline operates flights from between airports in Europe and the USA. Availab
 
 There are two fare classes available:
 
-|          | Base Fare | Surcharge     |
-| -------- | --------- | ------------- |
-| Economy  | £50       | £10 per 100km |
-| Business | £100      | £15 per 100km |
+|          | Base Fare | Surcharge      |
+| -------- | --------- | -------------- |
+| Economy  | £50       | £1 per 10km    |
+| Business | £100      | £1.50 per 10km |
 
 The base fare is paid once per booking based on the chosen fare class.
+
+A per-flight baggage fee of £25 is charged for each flight _after_ the first flight.
 
 ## Task
 
@@ -25,9 +27,9 @@ Write an application that takes an itinerary of 2 or more airports + a cabin cla
 For example:
 
 ```js
-book(["FRA", "MAN"], "ECONOMY") -> 50 + (10 * 8) -> 130
-book(["MAN", "JFK", "MAN"], "ECONOMY") -> 50 + (10 * 106) -> 1110
-book(["JFK", "MAN", "FRA"], "BUSINESS") -> 100 + (15 * 61) -> 1015
+book(["FRA", "MAN"], "ECONOMY") -> 50 + (1 * 84) -> 134
+book(["MAN", "JFK", "MAN"], "ECONOMY") -> 50 + (1 * 1064) + 25 -> 1139
+book(["JFK", "MAN", "FRA"], "BUSINESS") -> 100 + (1.5 * 616) + 25 -> 1049
 ```
 
 Implement the `book()` method and write tests to ensure it can:
