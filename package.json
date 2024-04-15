@@ -5,6 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
+    "format": "prettier --write .",
     "test": "jest"
   },
   "license": "UNLICENSED",
