@@ -20,7 +20,7 @@ The base fare is paid once per booking based on the chosen fare class.
 
 A per-flight baggage fee of £25 is charged for each flight _after_ the first flight.
 
-Example itineraries:
+Example trips:
 
 | Routes          | Class    | Distance | Base Fare | Surcharge | Baggage | Total |
 | --------------- | -------- | -------- | --------- | --------- | ------- | ----- |
