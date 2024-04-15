@@ -30,7 +30,7 @@ Example itineraries:
 
 ## Task
 
-Write an application that takes an itinerary of 2 or more airports + a cabin class and outputs the cost of the booking.
+Write an application that takes a trip through 2 or more airports + a cabin class and outputs the cost of the booking.
 
 Implement the `book()` method and write tests to ensure it can:
 
