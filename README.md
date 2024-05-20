@@ -28,7 +28,7 @@ Example trips:
 | MAN → JFK → MAN | Economy  | 10640    | 50        | 1064      | 25      | 1139  |
 | JFK → MAN → FRA | Business | 6165     | 100       | 616       | 25      | 1049  |
 
-## Task
+## Main Task
 
 Write an application that takes a trip through 2 or more airports + a cabin class and outputs the cost of the booking.
 
@@ -39,13 +39,6 @@ Implement the `book()` method and write tests to ensure it can:
 3. Calculate the cost of connecting flights (eg JFK → MAN → FRA).
 4. Throw a "flight unavailable" error for routes which are not available (eg FRA → JFK)
 
-## Extension
+## Extension Task (Optional)
 
-The airline offers a rewards program for frequent flyers. Points are awarded as follows:
-
-|          | Reward points earned                                 |
-| -------- | ---------------------------------------------------- |
-| Economy  | 500 per flight                                       |
-| Business | 1000 per flight < 1000km / 2000 per flight >= 1000km |
-
-Extend the application with the ability to calculate the number of points earned for a booking.
+After completing the Main Task, there is an **optional** [extension](./extension/README.md)
