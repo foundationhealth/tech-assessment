@@ -13,12 +13,12 @@ There are two fare classes available:
 
 |          | Base Fare | Surcharge      |
 | -------- | --------- | -------------- |
-| Economy  | £50       | £1 per 10km    |
-| Business | £100      | £1.50 per 10km |
+| Economy  | $50       | $1 per 10km    |
+| Business | $100      | $1.50 per 10km |
 
 The base fare is paid once per booking based on the chosen fare class.
 
-A per-flight baggage fee of £25 is charged for each flight _after_ the first flight.
+A per-flight baggage fee of $25 is charged for each flight _after_ the first flight.
 
 Example trips:
 
