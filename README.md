@@ -4,8 +4,8 @@
 
 An airline operates flights between airports in Europe and the USA. Available routes are provided in `data.ts` and can be flown in _either direction_, for example:
 
-| Route     | Distance |
-| --------- | -------- |
+| Route      | Distance |
+| ---------- | -------- |
 | MAN ↔ FRA | 845km    |
 | MAN ↔ JFK | 5320km   |
 
