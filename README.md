@@ -20,7 +20,7 @@ The base fare is paid once per booking based on the chosen fare class.
 
 A per-flight baggage fee of $25 is charged for each flight _after_ the first flight.
 
-Example trips:
+Example bookings:
 
 | Routes          | Class    | Distance | Base Fare | Surcharge | Baggage | Total |
 | --------------- | -------- | -------- | --------- | --------- | ------- | ----- |
@@ -30,7 +30,7 @@ Example trips:
 
 ## Main Task
 
-Write an application that takes a trip through 2 or more airports + a cabin class and outputs the cost of the booking.
+Write an application that takes a trip through 2 or more airports + a fare class and outputs the cost of the booking.
 
 Implement the `book()` method and write tests to ensure it can:
 
